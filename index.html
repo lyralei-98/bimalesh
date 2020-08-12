@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bimalesh</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800&display=swap" rel="stylesheet">
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]--> 
+    <!-- header-start -->
+    <div id="MenuBar">
+        <nav class="navbar navbar-expand-lg container-fluid " id="topBar">
+          <!-- Brand -->
+          <a class="navbar-brand" href=""><img style="height: 49px" src="img/about/logo.png"></a>
+
+          <!-- Toggler/collapsibe Button -->
+          <button id="menubutton" onclick="togglemenu()" class="navbar-toggler mouseHover" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span><img id="menuimage" src="img/about/menu.png"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a id="nav1" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#HomeDiv">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav2" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav3" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#portfolio-section">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav4" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#contacts-section">Contact</a>
+              </li>
+              <li class="nav-item socialmenu fullmenu">
+                <a href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                <a href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                <a href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>     
+    </div>
+    <!-- Home -->
+    <div id="HomeDiv">
+        <div class="container-fluid inheritHeight">
+            <div class="row inheritHeight">
+                <div class="col-11 col-sm-10 offset-1">
+                    <div class="introDiv">
+                        <p>Hey, I’m Bimalesh</p>
+                        <h1>User Experience Designer</h1>
+                        <span>Specialized in delivering end-to-end design solutions for mobile and web applications.</span>
+                        <br>
+                        <button class="btn hashremove" id="introBtn1" onclick="window.location.href='#contacts-section';">Contact me</button>
+                        <button class="btn" id="introBtn2">Download CV</button>
+                    </div>
+                </div>
+                <div class="col-sm-1 text-center Display">
+                    <ul class="list-group list-group-flush socialIcons">
+                      <li class="list-group-item noneBG"><a href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- /Home -->
+
+    <!-- About -->
+    <div class="aboutDIV topspace">
+        <div class="navigationDiv" id="about-section"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 aboutColumn">
+                    <h1>ABOUT ME</h1>
+                    <div class="DisplayAlt DisplayTab" style="margin-top: 10px">
+                        <h2>04</h2>
+                        <span>Years of<br></span><span>Experience</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p style="text-align: justify;">A Developer converted to a Creative Designer with around 4 years of professional experience working in the field of User Experience Design. Original and clever with the ability to work with design and development teams. Better understanding of requirements, business goals, branding document guidelines and converting prepared solutions into innovative wireframes by creating work flows and interactive designs.</p>
+                    <div class="Display DisplayTabAlt" style="margin-top: 64px">
+                        <h2>04</h2>
+                        <span>Years of<br></span><span>Experience</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 offset-xl-1 experienceColumn">
+                    <h1>EXPERIENCE</h1>
+                    <div class="timeline">
+                      <div class="containerr right">
+                        <div class="content">
+                          <div class="durationDiv">
+                            <div class="halfDiv">
+                                <span>From</span>
+                                <p>Oct '19</p>
+                            </div>
+                            <div class="halfDiv">
+                                <span>Till</span>
+                                <p>Present</p>
+                            </div>
+                          </div>
+                          <div class="companyDiv">
+                            <span>Dassault Systèmes</span>
+                            <p>User Experience Designer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="containerr right">
+                        <div class="content">
+                          <div class="durationDiv">
+                            <div class="halfDiv">
+                                <span>From</span>
+                                <p>Jul '16</p>
+                            </div>
+                            <div class="halfDiv">
+                                <span>Till</span>
+                                <p>Oct '19</p>
+                            </div>
+                          </div>
+                          <div class="companyDiv">
+                            <span>Wipro Limited</span>
+                            <p>User Experience Designer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="containerr right">
+                        <div class="content">
+                          <div class="durationDiv">
+                            <div class="halfDiv">
+                                <span>From</span>
+                                <p>Jul '16</p>
+                            </div>
+                            <div class="halfDiv">
+                                <span>Till</span>
+                                <p>Mar '16</p>
+                            </div>
+                          </div>
+                          <div class="companyDiv">
+                            <span>Wipro Limited</span>
+                            <p>Intern</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="aboutDiv bmargin portfolioContainerBG" >
+        <div class="navigationDiv" id="portfolio-section"></div>
+        <div class="container">
+            <h4 class="spaceCara head4">Portfolio</h4>
+        </div>
+            <div class="container-fluid">
+                <div id="myNav" class="overlay">
+                    <div class="row">
+                        <div id="portDiv" class="col-12" style="overflow: auto;">
+                                <p id="navHead">User Interface Design</p>
+                                <img id="navPicture" class="overlayimg" src="img/about/Website.png">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <button id="navNxt" class="nxtbtn mouseHover nxtt"><img class="nextimage" src="img/about/nextarrow.png"></button>
+                                <span class="nxtt nvnxt">Next</span>
+                                <button id="navPrv" class="prvbtn mouseHover prvv"><img class="nextimage" src="img/about/previous1.png"></button>
+                                <span class="prvv pvnxt">Previous</span>
+                        </div>   
+                    </div>
+                </div> 
+            <div class="row">
+                <div class="col-1 padZero"><button class="portprev btn"><img class="arrowShrink" src="img/about/previous.png"></button></div>
+                <div class="col-10 padZero">
+                    <div class="your-class">
+                      <div>
+                        <div class="outer outerFirst port0" onclick="openNav(0)">
+                            
+                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                        </div>
+                      </div>
+                      <div>
+                        <div class="outer outerSecond port1" onclick="openNav(1)">
+                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                        </div>
+                      </div>
+                      <div>
+                        <div class="outer outerThird port2" onclick="openNav(2)">
+                            
+                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                        </div>
+                      </div>
+                      <div>
+                        <div class="outer outerFourth port3" onclick="openNav(3)">
+                            
+                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                        </div>
+                      </div>
+                      <div>
+                        <div class="outer port4" onclick="openNav(4)">
+                            
+                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                        </div>
+                      </div>
+                      <div>
+                        <div class="outer port5" onclick="openNav(5)">
+                            
+                            <!-- <div class="portbtn"><p>See Details</p></div>  -->
+                          </div>
+                      </div>
+                      <div>
+                        <div class="outer port6" onclick="openNav(6)">
+                            
+                            <!-- <div class="portbtn"><p>See Details</p></div>  -->
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-1 padZero"><button class="portnxt btn"><img class="arrowShrink" src="img/about/next.png"></button></div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- / portfolio -->
+
+    <!-- Contact -->
+    <div class="contactDIV container">
+        <div class="navigationDivContact" id="contacts-section"></div>
+            <h1>Get in touch</h1>
+            <div class="row conpic">
+                <div class="col-lg-7">
+                    <div class="contactPara">
+                        <img src="img/about/contactpic.png">
+                        <!-- <img class="DisplayAlt" src="img/about/contactpicsmall.png"> -->
+                        <div class="row addrow">
+                            <div class="col-md-2 margin15"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Pune</span></div>
+                            <div class="col-md-4 margin15"><i class="fa fa-phone" aria-hidden="true"></i> <span>+91 8759093590</span></div>
+                            <div class="col-md-6 margin15"><i class="fa fa-envelope" aria-hidden="true"></i> <span>bimaleshsahoo@gmail.com</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 margin35">
+                    <form action="https://send.pageclip.co/NLGK3P8XBJ0lzGT25s3E5xRf9KpLHp9o/contact" class="pageclip-form" method="post" autocomplete="off" id="contactForm">
+                      <div class="form-group">
+                        <input name="name" class="form-control contactInput" placeholder="Name" required>
+                      </div>
+                      <div class="form-group">
+                        <input name="email" type="email" class="form-control contactInput" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="message" style="height: 156px;resize: none;" class="form-control contactInput" placeholder="Description" rows="3" required></textarea>
+                      </div>
+                      <button type="submit" class="btn contactButton pageclip-form__submit">Send</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Copyright © 2020 All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <div>
+                            <a href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+
+
+    <script>
+        $('#contactForm').validate() ;
+    </script>
+
+
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        $(".navbar").css("top","0px") ;
+      } else {
+        $(".navbar").css("top","-104px") ;
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $(document).mousemove(function(event){
+        if (event.screenY<130) {
+            $(".navbar").css("top","0px") ;
+        }
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+        $('.portnxt').click(function(){
+            $(".your-class").slick('slickNext');
+            changeSlide=(changeSlide+1)%7 ;
+            if (changeSlide==0){
+                $(".port6").removeClass("outerFirst") ;
+
+                $(".port0").removeClass("outerSecond") ;
+                $(".port0").addClass("outerFirst") ;
+
+                $(".port1").removeClass("outerThird") ;
+                $(".port1").addClass("outerSecond") ;
+
+                $(".port2").removeClass("outerFourth") ;
+                $(".port2").addClass("outerThird") ;
+
+                $(".port3").addClass("outerFourth") ;
+            }
+            if (changeSlide==1){
+                $(".port0").removeClass("outerFirst") ;
+
+                $(".port1").removeClass("outerSecond") ;
+                $(".port1").addClass("outerFirst") ;
+
+                $(".port2").removeClass("outerThird") ;
+                $(".port2").addClass("outerSecond") ;
+
+                $(".port3").removeClass("outerFourth") ;
+                $(".port3").addClass("outerThird") ;
+
+                $(".port4").addClass("outerFourth") ;
+            }
+            if (changeSlide==2){
+                $(".port1").removeClass("outerFirst") ;
+
+                $(".port2").removeClass("outerSecond") ;
+                $(".port2").addClass("outerFirst") ;
+
+                $(".port3").removeClass("outerThird") ;
+                $(".port3").addClass("outerSecond") ;
+
+                $(".port4").removeClass("outerFourth") ;
+                $(".port4").addClass("outerThird") ;
+
+                $(".port5").addClass("outerFourth") ;
+            }
+            if (changeSlide==3){
+                $(".port2").removeClass("outerFirst") ;
+
+                $(".port3").removeClass("outerSecond") ;
+                $(".port3").addClass("outerFirst") ;
+
+                $(".port4").removeClass("outerThird") ;
+                $(".port4").addClass("outerSecond") ;
+
+                $(".port5").removeClass("outerFourth") ;
+                $(".port5").addClass("outerThird") ;
+
+                $(".port6").addClass("outerFourth") ;
+            }
+            if (changeSlide==4){
+                $(".port3").removeClass("outerFirst") ;
+
+                $(".port4").removeClass("outerSecond") ;
+                $(".port4").addClass("outerFirst") ;
+
+                $(".port5").removeClass("outerThird") ;
+                $(".port5").addClass("outerSecond") ;
+
+                $(".port6").removeClass("outerFourth") ;
+                $(".port6").addClass("outerThird") ;
+
+                $(".port0").addClass("outerFourth") ;
+            }
+            if (changeSlide==5){
+                $(".port4").removeClass("outerFirst") ;
+
+                $(".port5").removeClass("outerSecond") ;
+                $(".port5").addClass("outerFirst") ;
+
+                $(".port6").removeClass("outerThird") ;
+                $(".port6").addClass("outerSecond") ;
+
+                $(".port0").removeClass("outerFourth") ;
+                $(".port0").addClass("outerThird") ;
+
+                $(".port1").addClass("outerFourth") ;
+            }
+            if (changeSlide==6){
+                $(".port5").removeClass("outerFirst") ;
+
+                $(".port6").removeClass("outerSecond") ;
+                $(".port6").addClass("outerFirst") ;
+
+                $(".port0").removeClass("outerThird") ;
+                $(".port0").addClass("outerSecond") ;
+
+                $(".port1").removeClass("outerFourth") ;
+                $(".port1").addClass("outerThird") ;
+
+                $(".port2").addClass("outerFourth") ;
+            }
+
+        });
+        $('.portprev').click(function(){
+            $(".your-class").slick('slickPrev');
+            changeSlide=changeSlide-1;
+            changeSlide=(changeSlide+7)%7 ;
+            if (changeSlide==6){
+                $(".port3").removeClass("outerFourth") ;
+
+                $(".port2").removeClass("outerThird") ;
+                $(".port2").addClass("outerFourth") ;
+
+                $(".port1").removeClass("outerSecond") ;
+                $(".port1").addClass("outerThird") ;
+
+                $(".port0").removeClass("outerFirst") ;
+                $(".port0").addClass("outerSecond") ;
+
+                $(".port6").addClass("outerFirst") ;
+            }
+            if (changeSlide==5){
+                $(".port2").removeClass("outerFourth") ;
+
+                $(".port1").removeClass("outerThird") ;
+                $(".port1").addClass("outerFourth") ;
+
+                $(".port0").removeClass("outerSecond") ;
+                $(".port0").addClass("outerThird") ;
+
+                $(".port6").removeClass("outerFirst") ;
+                $(".port6").addClass("outerSecond") ;
+
+                $(".port5").addClass("outerFirst") ;
+            }
+            if (changeSlide==4){
+                $(".port1").removeClass("outerFourth") ;
+
+                $(".port0").removeClass("outerThird") ;
+                $(".port0").addClass("outerFourth") ;
+
+                $(".port6").removeClass("outerSecond") ;
+                $(".port6").addClass("outerThird") ;
+
+                $(".port5").removeClass("outerFirst") ;
+                $(".port5").addClass("outerSecond") ;
+
+                $(".port4").addClass("outerFirst") ;
+            }
+            if (changeSlide==3){
+                $(".port0").removeClass("outerFourth") ;
+
+                $(".port6").removeClass("outerThird") ;
+                $(".port6").addClass("outerFourth") ;
+
+                $(".port5").removeClass("outerSecond") ;
+                $(".port5").addClass("outerThird") ;
+
+                $(".port4").removeClass("outerFirst") ;
+                $(".port4").addClass("outerSecond") ;
+
+                $(".port3").addClass("outerFirst") ;
+            }
+            if (changeSlide==2){
+                $(".port6").removeClass("outerFourth") ;
+
+                $(".port5").removeClass("outerThird") ;
+                $(".port5").addClass("outerFourth") ;
+
+                $(".port4").removeClass("outerSecond") ;
+                $(".port4").addClass("outerThird") ;
+
+                $(".port3").removeClass("outerFirst") ;
+                $(".port3").addClass("outerSecond") ;
+
+                $(".port2").addClass("outerFirst") ;
+            }
+            if (changeSlide==1){
+                $(".port5").removeClass("outerFourth") ;
+
+                $(".port4").removeClass("outerThird") ;
+                $(".port4").addClass("outerFourth") ;
+
+                $(".port3").removeClass("outerSecond") ;
+                $(".port3").addClass("outerThird") ;
+
+                $(".port2").removeClass("outerFirst") ;
+                $(".port2").addClass("outerSecond") ;
+
+                $(".port1").addClass("outerFirst") ;
+            }
+            if (changeSlide==0){
+                $(".port4").removeClass("outerFourth") ;
+
+                $(".port3").removeClass("outerThird") ;
+                $(".port3").addClass("outerFourth") ;
+
+                $(".port2").removeClass("outerSecond") ;
+                $(".port2").addClass("outerThird") ;
+
+                $(".port1").removeClass("outerFirst") ;
+                $(".port1").addClass("outerSecond") ;
+
+                $(".port0").addClass("outerFirst") ;
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        var changeSlide=0 ;
+        
+    </script>
+    
+
+    <!-- JS here -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="js/navBar.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js/slickConfig.js"></script>
+    <script>AOS.init();</script>
+    <script type="text/javascript" src="js/removeHash.js"></script>
+    
+
+
+</body>
+</html>
