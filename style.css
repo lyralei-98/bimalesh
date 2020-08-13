@@ -423,7 +423,7 @@
             } 
             .nav-link{
                 padding-bottom: 0px;
-                padding-top: 40px;
+                padding-top: 50px;
                 text-align: left;
                 font: 50px avenirBlack;
                 letter-spacing: 2.5px;
@@ -441,7 +441,7 @@
                 display: block !important;
                 font-size: 25px;
                 letter-spacing: 15px;
-                margin-top: 20px;
+                margin-top: 70px;
                 text-align: center;
             }
             .socialmenu a{
