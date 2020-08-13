@@ -35,8 +35,30 @@
             width: 255px;
             margin-left: auto;
             margin-right: auto;
-            box-shadow: 0px 3px 40px #00000029;
-            transition: margin 0.5s, border-radius 0.5s ;
+            box-shadow: 0px 3px 25px #00000029;
+            transition: margin 0.5s, border-radius 0.5s;
+        }
+        .detailsTab{
+            opacity: 0 ;
+            height: 100% ;
+            width: 100% ;
+        }
+        .detailsTab:hover{
+            opacity: 1 ;
+        }
+        .detailBtn{
+            position: relative;
+            top: 40%;
+            width: 55%;
+            display: block;
+            color: white !important;
+            border: 2px solid white ;
+            margin: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .detailBtn:hover{
+            cursor: default;
         }
         .outerFirst{
             margin-top: 20px ;
@@ -142,11 +164,17 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+        .port0:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port0.png");
+        }
         .port1{
             background-image: url("img/about/port1.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        .port1:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port1.png");
         }
         .port2{
             background-image: url("img/about/port2.png");
@@ -154,11 +182,17 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+        .port2:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port2.png");
+        }
         .port3{
             background-image: url("img/about/port3.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        .port3:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port3.png");
         }
         .port4{
             background-image: url("img/about/port4.png");
@@ -166,17 +200,26 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+        .port4:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port4.png");
+        }
         .port5{
             background-image: url("img/about/port5.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
+        .port5:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port5.png");
+        }
         .port6{
             background-image: url("img/about/port6.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        .port6:hover{
+            background-image: linear-gradient(rgba(46, 81, 197, 0.7), rgba(46, 81, 197, 0.7)) , url("img/about/port6.png");
         }
         .inheritHeight{
             height: inherit;
@@ -189,12 +232,12 @@
             background-position: center ;
         }
         .introDiv {
-            margin: 0;
-            position: absolute;
+            margin-top: 245px;
+            /*position: absolute;
             top: 42%;
             left: 57%;
             -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);*/
         }
         .introDiv p{
             margin-bottom: 0px;
@@ -204,11 +247,23 @@
         .introDiv h1{
             margin-bottom: 15px;
             color: white ;
-            font:44px avenirBlack ;
+            font:43px avenirBlack ;
         }
         .introDiv span{
             color: white;
             font: 18px avenirBook;
+        }
+        .introDiv span::after{
+            content: "Specialized in delivering end-to-end design solutions for \A " 
+                     "mobile and web applications." ;
+            white-space: pre; 
+        }
+        @media screen and (max-width: 614px) and (min-width: 575px) {
+            .introDiv span::after{
+            content: "Specialized in delivering end-to-end design solutions \A " 
+                     "for mobile and web applications." ;
+            white-space: pre; 
+        }
         }
         .introDiv button{
             margin-right: 25px;
@@ -275,7 +330,7 @@
         .navbar{
             position: fixed;
             z-index: 1000;
-            top: 0px;
+            top: 0px !important;
             transition: top 0.3s;
             padding-top: 15px;
             padding-right: 104px;
@@ -326,9 +381,24 @@
             .navbar-brand{
                 margin-left: 60px ;
             }
-
+            .socialIcons{
+                display: none;
+            }
         }
-        
+        @media screen and (max-width: 767px) and (min-width: 575px){
+            .introDiv h1{
+                font-size: 25px !important ;
+            }
+            .introDiv span{
+                font-size: 13px !important ;
+            }
+        }
+        @media screen and (min-width: 991px){
+            .Display{
+                display: none !important;
+            }
+        }
+
         @media screen and (max-width: 991px){
             .introDiv span{
                 font-size: 15px ;
@@ -383,6 +453,9 @@
             .navbar{
                 top: 0px !important  ;
             }
+            .DisplayAlt{
+                display: none !important;
+            }
             .contactDIV{
                 background-image: none !important;
             }
@@ -398,11 +471,11 @@
             }
             .companyDiv span{
                 line-height: 0 !important;
-                font-size: 16px !important;
+                font-size: 14px !important;
             }
             .companyDiv p{
-                line-height: 1.5 !important;
-                font-size: 16px !important;
+                line-height: 2 !important;
+                font-size: 13px !important;
             }
             .halfDiv{
                 width: 50% !important;
@@ -412,17 +485,11 @@
 
         }
         @media screen and (max-width: 992px) and (min-width: 576px) {
-            .introDiv{
+            /*.introDiv{
                 transform: none;
                 top: 28%;
                 left: 205px;
-            }
-            .DisplayTab{
-                display: block !important;
-            }
-            .DisplayTabAlt{
-                display: none !important;
-            }
+            }*/
             .aboutColumn p {
                 margin-top: 0px !important;
             }
@@ -437,6 +504,9 @@
                 margin-top: 35px ;
             }
         }
+        .margin15{
+            margin: 50px 0 ;
+        }
         @media screen and (max-width: 575px) {
             .topspace{
                 margin-top: 50px !important;
@@ -449,7 +519,7 @@
             }
             #HomeDiv{
                 height: 410px ;
-                background-position: top 81px left -106px;
+                background-position: top 79px left -106px;
                 background-size: 688px 355px ;
             }
             .navbar{
@@ -474,20 +544,12 @@
                 letter-spacing: 0px;
             }
             .introDiv{
-                top: 240px;
-                left: 205px;
-                width: 200px;
+                margin-top: 177px;
             }
             #introBtn2{
                 margin-top: 0px ;
                 margin-left: 60px ;
                 margin-right: 0px ;
-            }
-            .Display{
-                display: none !important;
-            }
-            .DisplayAlt{
-                display: block !important; 
             }
             .experienceColumn{
                 margin-top: 50px;
@@ -520,18 +582,6 @@
                 margin-top: 35px ;
             }
         }
-        .Display{
-            display: block;
-        }
-        .DisplayAlt{
-            display: none ;
-        }
-        .DisplayTab{
-            display: block;
-        }
-        .DisplayTabAlt{
-            display: none;
-        }
         #about-section p{
             font-family: avenirBook;
             font-size: 18px;
@@ -549,7 +599,7 @@
         }
         .navigationDivContact{
             position: relative;
-            top: 150px;
+            top: -110px;
         }   
         .overlay {
           height: 100%;
@@ -957,12 +1007,18 @@
             color: #FFFFFF;
             padding-left: 15px ;
         }
+        .blackHover:hover{
+            color: black !important;
+        }
         .contactDIV{
-            margin-top: 100px ;
+            margin-top: 50px ;
             background-image: url("img/about/Contact.png") ;
             background-repeat: no-repeat;
             background-position: top  20px left 680px ;
             margin-bottom: 105px ;
+        }
+        .contactDIV a:hover{
+            text-decoration: none;
         }
         .contactDIV h1{
             font: 22px avenirBlack;
@@ -979,7 +1035,7 @@
             margin-top: 53px;
         }
         .contactDIV .addrow{
-            margin-top: 22px;
+            margin-top: 55px;
         }
         .contactDIV .addrow span{
             font: 16px avenirRoman;
@@ -989,6 +1045,11 @@
         .contactDIV .addrow i{
             font: 16px;
             color: #2E51C5 ;
+        }
+        @media screen and (min-width: 1200px) {
+            .contactDIV .addrow{
+                margin-top: 110px;
+            }
         }
         .portnxt{
             padding: 0;

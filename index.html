@@ -25,10 +25,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]--> 
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- header-start -->
     <div id="MenuBar">
         <nav class="navbar navbar-expand-lg container-fluid " id="topBar">
@@ -56,10 +53,10 @@
                 <a id="nav4" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#contacts-section">Contact</a>
               </li>
               <li class="nav-item socialmenu fullmenu">
-                <a href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                <a href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-                <a href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-                <a href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a>
               </li>
             </ul>
           </div>
@@ -69,22 +66,22 @@
     <div id="HomeDiv">
         <div class="container-fluid inheritHeight">
             <div class="row inheritHeight">
-                <div class="col-11 col-sm-10 offset-1">
+                <div class="col-8 offset-4 col-sm-7 offset-sm-5 col-md-7 offset-md-4 col-lg-7 offset-lg-4">
                     <div class="introDiv">
                         <p>Hey, I’m Bimalesh</p>
                         <h1>User Experience Designer</h1>
-                        <span>Specialized in delivering end-to-end design solutions for mobile and web applications.</span>
+                        <span></span>
                         <br>
                         <button class="btn hashremove" id="introBtn1" onclick="window.location.href='#contacts-section';">Contact me</button>
                         <button class="btn" id="introBtn2">Download CV</button>
                     </div>
                 </div>
-                <div class="col-sm-1 text-center Display">
+                <div class="col-sm-0 col-md-1 col-lg-1 text-center">
                     <ul class="list-group list-group-flush socialIcons">
-                      <li class="list-group-item noneBG"><a href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li class="list-group-item noneBG"><a href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      <li class="list-group-item noneBG"><a href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                      <li class="list-group-item noneBG"><a href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a target="_blank" href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a target="_blank" href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a target="_blank" href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li class="list-group-item noneBG"><a target="_blank" href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 
@@ -102,13 +99,13 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-6 aboutColumn">
                     <h1>ABOUT ME</h1>
-                    <div class="DisplayAlt DisplayTab" style="margin-top: 10px">
+                    <div class="Display" style="margin-top: 10px">
                         <h2>04</h2>
                         <span>Years of<br></span><span>Experience</span>
                     </div>
                     <div class="clearfix"></div>
                     <p style="text-align: justify;">A Developer converted to a Creative Designer with around 4 years of professional experience working in the field of User Experience Design. Original and clever with the ability to work with design and development teams. Better understanding of requirements, business goals, branding document guidelines and converting prepared solutions into innovative wireframes by creating work flows and interactive designs.</p>
-                    <div class="Display DisplayTabAlt" style="margin-top: 64px">
+                    <div class="DisplayAlt" style="margin-top: 64px">
                         <h2>04</h2>
                         <span>Years of<br></span><span>Experience</span>
                     </div>
@@ -157,7 +154,7 @@
                           <div class="durationDiv">
                             <div class="halfDiv">
                                 <span>From</span>
-                                <p>Jul '16</p>
+                                <p>Jan '16</p>
                             </div>
                             <div class="halfDiv">
                                 <span>Till</span>
@@ -201,43 +198,37 @@
                     <div class="your-class">
                       <div>
                         <div class="outer outerFirst port0" onclick="openNav(0)">
-                            
-                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                         </div>
                       </div>
                       <div>
                         <div class="outer outerSecond port1" onclick="openNav(1)">
-                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                         </div>
                       </div>
                       <div>
                         <div class="outer outerThird port2" onclick="openNav(2)">
-                            
-                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                         </div>
                       </div>
                       <div>
                         <div class="outer outerFourth port3" onclick="openNav(3)">
-                            
-                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                         </div>
                       </div>
                       <div>
                         <div class="outer port4" onclick="openNav(4)">
-                            
-                            <!-- <div class="portbtn"><p>See Details</p></div> -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                         </div>
                       </div>
                       <div>
                         <div class="outer port5" onclick="openNav(5)">
-                            
-                            <!-- <div class="portbtn"><p>See Details</p></div>  -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                           </div>
                       </div>
                       <div>
                         <div class="outer port6" onclick="openNav(6)">
-                            
-                            <!-- <div class="portbtn"><p>See Details</p></div>  -->
+                            <div class="detailsTab"><button type="button" class="btn detailBtn">See Details</button></div>
                           </div>
                       </div>
                     </div>
@@ -258,15 +249,18 @@
                     <div class="contactPara">
                         <img src="img/about/contactpic.png">
                         <!-- <img class="DisplayAlt" src="img/about/contactpicsmall.png"> -->
-                        <div class="row addrow">
+                        <!-- <div class="row addrow">
                             <div class="col-md-2 margin15"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Pune</span></div>
                             <div class="col-md-4 margin15"><i class="fa fa-phone" aria-hidden="true"></i> <span>+91 8759093590</span></div>
                             <div class="col-md-6 margin15"><i class="fa fa-envelope" aria-hidden="true"></i> <span>bimaleshsahoo@gmail.com</span></div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="col-lg-5 margin35">
-                    <form action="https://send.pageclip.co/NLGK3P8XBJ0lzGT25s3E5xRf9KpLHp9o/contact" class="pageclip-form" method="post" autocomplete="off" id="contactForm">
+                <div class="col-lg-4 offset-lg-1 margin35 addrow">
+                    <div class="margin15"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp; <span>Pune, India</span></div>
+                    <div class="margin15"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp; <span>+91 8759093590</span></div>
+                    <div class="margin15"><a href="mailto:bimaleshsahoo@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; <span>bimaleshsahoo@gmail.com</span></a></div>
+                    <!-- <form action="https://send.pageclip.co/NLGK3P8XBJ0lzGT25s3E5xRf9KpLHp9o/contact" class="pageclip-form" method="post" autocomplete="off" id="contactForm">
                       <div class="form-group">
                         <input name="name" class="form-control contactInput" placeholder="Name" required>
                       </div>
@@ -277,7 +271,7 @@
                         <textarea name="message" style="height: 156px;resize: none;" class="form-control contactInput" placeholder="Description" rows="3" required></textarea>
                       </div>
                       <button type="submit" class="btn contactButton pageclip-form__submit">Send</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
     </div>
@@ -293,10 +287,10 @@
                 </div>
                 <div class="col-md-6 text-right">
                     <div>
-                            <a href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook blackHover"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram blackHover"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin blackHover"></i></a>
+                            <a target="_blank" href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance blackHover"></i></a>
                     </div>
                 </div>
             </div>
