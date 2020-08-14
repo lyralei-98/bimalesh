@@ -1,8 +1,5 @@
  $(document).ready(function(){
   $('.your-class').slick({
-    // dots:true,
-    // nextArrow: '<i class="fa fa-arrow-right"></i>',
-    // prevArrow: '<i class="fa fa-arrow-left"></i>',
     arrows:false,
     infinite: true,
     slidesToShow: 4,
@@ -16,8 +13,9 @@
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true
-          // dots: true
+          infinite: true,
+          draggable:false,
+          swipe:false,
         }
       },
       {
@@ -25,7 +23,9 @@
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite:true
+          infinite:true,
+          draggable:false,
+          swipe:false,
         }
       },
       {
@@ -34,11 +34,10 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite:true,
+          draggable:false,
+          swipe:false,
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 });
