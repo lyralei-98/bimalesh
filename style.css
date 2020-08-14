@@ -411,6 +411,9 @@
             .introDiv button{
                 margin-top: 37px;
             }
+            .timeline{
+                top: -33px ;
+            }
         }
 
         @media screen and (max-width: 991px){
