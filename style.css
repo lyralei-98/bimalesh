@@ -521,7 +521,7 @@
                 font: 100px avenirBlack !important;
             }
             .aboutColumn span {
-                top: 55px !important;
+                top: 37px !important;
             }
             #HomeDiv{
                 height: 410px ;
@@ -798,7 +798,7 @@
             height: 50px ;
             width: 91px ;
             position: relative;
-            top: 100px ;
+            top: 80px ;
             font: 18px avenirMedium;
             letter-spacing: 0px;
             color: #191919;
