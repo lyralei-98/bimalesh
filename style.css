@@ -38,6 +38,9 @@
             box-shadow: 0px 3px 25px #00000029;
             transition: margin 0.5s, border-radius 0.5s;
         }
+        .outer:hover{
+            cursor: pointer;
+        }
         .detailsTab{
             opacity: 0 ;
             height: 100% ;
@@ -58,7 +61,7 @@
             margin-bottom: auto;
         }
         .detailBtn:hover{
-            cursor: default;
+            cursor: pointer;
         }
         .outerFirst{
             margin-top: 20px ;
@@ -165,7 +168,7 @@
             background-position: center;
         }
         .port0:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port0.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port0.png");
         }
         .port1{
             background-image: url("img/about/port1.png");
@@ -174,7 +177,7 @@
             background-position: center;
         }
         .port1:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port1.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port1.png");
         }
         .port2{
             background-image: url("img/about/port2.png");
@@ -183,7 +186,7 @@
             background-position: center;
         }
         .port2:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port2.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port2.png");
         }
         .port3{
             background-image: url("img/about/port3.png");
@@ -192,7 +195,7 @@
             background-position: center;
         }
         .port3:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port3.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port3.png");
         }
         .port4{
             background-image: url("img/about/port4.png");
@@ -201,7 +204,7 @@
             background-position: center;
         }
         .port4:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port4.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port4.png");
         }
         .port5{
             background-image: url("img/about/port5.png");
@@ -210,7 +213,7 @@
             background-position: center;
         }
         .port5:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port5.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port5.png");
         }
         .port6{
             background-image: url("img/about/port6.png");
@@ -219,7 +222,7 @@
             background-position: center;
         }
         .port6:hover{
-            background-image: linear-gradient(rgba(46, 81, 197, 0.8), rgba(46, 81, 197, 0.8)) , url("img/about/port6.png");
+            background-image: linear-gradient(rgba(85,85,85,0.8), rgba(85,85,85,0.8)) , url("img/about/port6.png");
         }
         .inheritHeight{
             height: inherit;
@@ -687,14 +690,14 @@
         }
         .overlay .nvnxt{
             position: fixed;
-            bottom: 20px;
-            right: 54px;
+            bottom: 6px;
+            right: 43px;
             font-size: 11px;
             font-family:'Nunito', sans-serif;
         }
         .overlay .pvnxt{
             position: fixed;
-            bottom: 20px;
+            bottom: 6px;
             left: 33px;
             font-size: 11px;
             font-family:'Nunito', sans-serif;
