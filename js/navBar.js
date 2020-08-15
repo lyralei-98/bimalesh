@@ -60,6 +60,9 @@
         $('#navNxt').click(function() {
             navGlobal=(navGlobal+1)%7 ;
             navDecide(navGlobal) ;
+            $('#myNav').animate({
+                scrollTop: 0
+            }, 0);
         });
         $('#navPrv').click(function() {
             navGlobal=(navGlobal-1)%7 ;
@@ -67,6 +70,9 @@
               navGlobal=navGlobal+7 ;
             }
             navDecide(navGlobal) ;
+            $('#myNav').animate({
+                scrollTop: 0
+            }, 0);
         });
 
         function enablescroll() {
