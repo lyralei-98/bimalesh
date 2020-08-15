@@ -229,7 +229,7 @@
         }
         #HomeDiv{
             height: 754px;
-            background-image: url("img/about/main3.png");
+            background-image: url("img/about/main2.png");
             background-repeat: no-repeat;
             background-size: 1665px 860px ;
             background-position: center ;
@@ -362,12 +362,14 @@
             border-image-source: linear-gradient(to right, black 0%,black 20%, #2d4fc0 20%, #2d4fc0 80%, black 80%, black 100%);
             border-image-slice: 1;    
             border-bottom: solid white 2px;
+            border-top: 0px !important;
         }
         .active{
             color: #2d4fc0 !important;
             border-image-source: linear-gradient(to right, black 0%,black 20%, #2d4fc0 20%, #2d4fc0 80%, black 80%, black 100%);
             border-image-slice: 1;    
             border-bottom: solid #2d4fc0 2px;
+            border-top: 0px !important;
         }
         .head4{
             font: 22px avenirBlack;
@@ -1115,4 +1117,8 @@
         .floatLeft{
             float: left;
             font-size: 20px ;
+        }
+        .navbar-collapse.collapse.show {
+          overflow-y: auto;
+          height: calc(100vh - 80px) ;
         }

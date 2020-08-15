@@ -4,6 +4,9 @@
           navGlobal=navnum ;
           navDecide(navnum);
           document.getElementById("myNav").style.display = "block";
+          $('#myNav').animate({
+                scrollTop: 0
+            }, 0);
           $("body").css("overflow-y","hidden");
         }
         function closeNav() {
