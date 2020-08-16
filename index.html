@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,9 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800&display=swap" rel="stylesheet">
-
 
     <!-- CSS here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,36 +27,35 @@
     <div id="MenuBar">
         <nav class="navbar navbar-expand-lg fixed-top" id="topBar">
             <div class="container">
-          <!-- Brand -->
-          <a class="navbar-brand" href=""><img style="height: 49px" src="img/about/logo.png"></a>
+                <!-- Brand -->
+                <a class="navbar-brand" href=""><img style="height: 49px" alt="Bimalesh Sahoo" src="img/about/logo.png"></a>
+                <button id="menubutton" onclick="togglemenu()" class="navbar-toggler mouseHover" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span><img id="menuimage" alt="Menu" src="img/about/menu.png"></span>
+                </button>
 
-          <button id="menubutton" onclick="togglemenu()" class="navbar-toggler mouseHover" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span><img id="menuimage" src="img/about/menu.png"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a id="nav1" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#HomeDiv">Home</a>
-              </li>
-              <li class="nav-item">
-                <a id="nav2" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#about-section">About</a>
-              </li>
-              <li class="nav-item">
-                <a id="nav3" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#portfolio-section">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a id="nav4" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#contacts-section">Contact</a>
-              </li>
-              <li class="nav-item socialmenu">
-                <a target="_blank" href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                <a target="_blank" href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-                <a target="_blank" href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-                <a target="_blank" href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a>
-              </li>
-            </ul>
-          </div>
-      </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a id="nav1" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#HomeDiv">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav2" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#about-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav3" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#portfolio-section">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav4" onclick="enablescroll()" class="nav-link mouseHover invi-link hashremove" href="#contacts-section">Contact</a>
+                        </li>
+                        <li class="nav-item socialmenu">
+                            <a target="_blank" href="https://www.facebook.com/bimalesh.sahoo"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                            <a target="_blank" href="https://www.instagram.com/bimalesh_sahoo"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                            <a target="_blank" href="https://www.linkedin.com/in/bimaleshsahoo"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                            <a target="_blank" href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>     
     </div>
     <!-- Home -->
@@ -71,9 +69,7 @@
                         <span></span>
                         <br>
                         <button class="btn hashremove" id="introBtn1" onclick="window.location.href='#contacts-section';">Contact me</button>
-                        <a target="_blank" href="img/cv.pdf">
-                        <button class="btn" id="introBtn2">Download CV</button>
-                        </a>
+                        <button class="btn" id="introBtn2"><a class="cvLink" target="_blank" href="img/cv.pdf">Download CV</a></button>
                     </div>
                 </div>
                 <div class="col-sm-0 col-md-1 col-lg-1 text-center">
@@ -84,11 +80,8 @@
                       <li class="list-group-item noneBG"><a target="_blank" href="https://www.behance.net/bimaleshsahoo"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-                
             </div>
-            
         </div>
-        
     </div>
     <!-- /Home -->
 
@@ -117,58 +110,59 @@
                 <div class="col-lg-6 col-xl-5 offset-xl-1 experienceColumn">
                     <h1>EXPERIENCE</h1>
                     <div class="timeline">
-                      <div class="containerr right">
-                        <div class="content">
-                          <div class="durationDiv">
-                            <div class="halfDiv">
-                                <span>From</span>
-                                <p>Oct '19</p>
+                        <div class="containerr right">
+                            <div class="content">
+                                <div class="durationDiv">
+                                    <div class="halfDiv">
+                                        <span>From</span>
+                                        <p>Oct '19</p>
+                                    </div>
+                                    <div class="halfDiv">
+                                        <span>Till</span>
+                                        <p>Present</p>
+                                    </div>
+                                </div>
+                                <div class="companyDiv">
+                                    <span>Dassault Systèmes</span>
+                                    <p>User Experience Designer</p>
+                              </div>
                             </div>
-                            <div class="halfDiv">
-                                <span>Till</span>
-                                <p>Present</p>
-                            </div>
-                          </div>
-                          <div class="companyDiv">
-                            <span>Dassault Systèmes</span>
-                            <p>User Experience Designer</p>
-                          </div>
                         </div>
-                      </div>
-                      <div class="containerr right">
-                        <div class="content">
-                          <div class="durationDiv">
-                            <div class="halfDiv">
-                                <span>From</span>
-                                <p>Jul '16</p>
+                        <div class="containerr right">
+                            <div class="content">
+                                <div class="durationDiv">
+                                    <div class="halfDiv">
+                                        <span>From</span>
+                                        <p>Jul '16</p>
+                                    </div>
+                                    <div class="halfDiv">
+                                        <span>Till</span>
+                                        <p>Oct '19</p>
+                                    </div>
+                                </div>
+                                <div class="companyDiv">
+                                    <span>Wipro Limited</span>
+                                    <p>User Experience Designer</p>
+                              </div>
                             </div>
-                            <div class="halfDiv">
-                                <span>Till</span>
-                                <p>Oct '19</p>
-                            </div>
-                          </div>
-                          <div class="companyDiv">
-                            <span>Wipro Limited</span>
-                            <p>User Experience Designer</p>
-                          </div>
                         </div>
-                      </div>
-                      <div class="containerr right">
-                        <div class="content">
-                          <div class="durationDiv">
-                            <div class="halfDiv">
-                                <span>From</span>
-                                <p>Jan '16</p>
+                        <div class="containerr right">
+                            <div class="content">
+                                <div class="durationDiv">
+                                    <div class="halfDiv">
+                                        <span>From</span>
+                                        <p>Jan '16</p>
+                                    </div>
+                                    <div class="halfDiv">
+                                        <span>Till</span>
+                                        <p>Mar '16</p>
+                                    </div>
+                                </div>
+                                <div class="companyDiv">
+                                    <span>Wipro Limited</span>
+                                    <p>Intern</p>
+                              </div>
                             </div>
-                            <div class="halfDiv">
-                                <span>Till</span>
-                                <p>Mar '16</p>
-                            </div>
-                          </div>
-                          <div class="companyDiv">
-                            <span>Wipro Limited</span>
-                            <p>Intern</p>
-                          </div>
                         </div>
                     </div>
                 </div>
@@ -187,17 +181,17 @@
                     <div class="row">
                         <div id="portDiv" class="col-12" style="overflow: auto;">
                                 <p id="navHead">User Interface Design</p>
-                                <img id="navPicture" class="overlayimg" src="img/about/Website.png">
+                                <img id="navPicture" alt="Portfolio Details" class="overlayimg" src="img/about/Website.png">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <button id="navNxt" class="nxtbtn nxtt"><img class="nextimage" src="img/about/nextarrow.png"></button>
+                                <button id="navNxt" class="nxtbtn nxtt"><img alt="next" class="nextimage" src="img/about/nextarrow.png"></button>
                                 <span class="nxtt nvnxt">Next<br>Project</span>
-                                <button id="navPrv" class="prvbtn prvv"><img class="nextimage" src="img/about/previous1.png"></button>
+                                <button id="navPrv" class="prvbtn prvv"><img align="previous" class="nextimage" src="img/about/previous1.png"></button>
                                 <span class="prvv pvnxt">Previous<br>Project</span>
                         </div>   
                     </div>
                 </div> 
             <div class="row">
-                <div class="col-1 padZero"><button class="portprev btn"><img class="arrowShrink" src="img/about/previous.png"></button></div>
+                <div class="col-1 padZero"><button class="portprev btn"><img alt="previous" class="arrowShrink" src="img/about/previous.png"></button></div>
                 <div class="col-10 padZero">
                     <div class="your-class">
                       <div>
@@ -237,7 +231,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-1 padZero"><button class="portnxt btn"><img class="arrowShrink" src="img/about/next.png"></button></div>
+                <div class="col-1 padZero"><button class="portnxt btn"><img alt="next" class="arrowShrink" src="img/about/next.png"></button></div>
             </div>
         </div>
         
@@ -286,13 +280,10 @@
 
     <!-- JS here -->
     <script src="js/jquery.slicknav.min.js"></script>
-    <script type="text/javascript" src="js/navBar.js"></script>
-    <script type="text/javascript" src="slick/slick.js"></script>
-    <script type="text/javascript" src="js/slickConfig.js"></script>
-    <script type="text/javascript" src="js/removeHash.js"></script>
-    <script type="text/javascript" src="js/changeSlide.js"></script>
-    
-
-
+    <script src="js/navBar.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/slickConfig.js"></script>
+    <script src="js/removeHash.js"></script>
+    <script src="js/changeSlide.js"></script>
 </body>
 </html>
