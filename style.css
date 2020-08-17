@@ -227,12 +227,21 @@
         .inheritHeight{
             height: inherit;
         }
+        @media screen and (max-width: 1920px) and (min-width: 1600px){
+            #HomeDiv{
+                height: 820px !important;
+                background-image: url(img/about/main6.png);
+                background-repeat: no-repeat;
+                background-size: 1886px 975px !important;
+                background-position: center;
+            }
+        }
         #HomeDiv{
             height: 754px;
-            background-image: url("img/about/main3.png");
+            background-image: url("img/about/main6.png");
             background-repeat: no-repeat;
             background-size: 1665px 860px ;
-            background-position: center ;
+            background-position: center;
         }
         .btn{
             font-family: avenirMedium ;
@@ -580,7 +589,7 @@
                 position: relative;
                 left: 8px ;
             }
-            .portnxt{
+            #portnxtbtn{
                 position: relative;
                 right: 8px ;
             }
@@ -1098,7 +1107,7 @@
                 margin-top: 110px;
             }
         }
-        .portnxt{
+        #portnxtbtn{
             padding: 0;
             float: left;
             position: relative;
